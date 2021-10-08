@@ -46,12 +46,13 @@ class MainActivityTest {
     }
 
     /**
-     * button 을 클릭하면 textView 의 text 가 DevHyeon 으로 변경
+     * ko. button 을 클릭하면 textView 의 text 가 DevHyeon 으로 변경
+     * en. If you click button, text in textView changes to DevHyeon
      * */
     private fun buttonClickIsChangeTextView() {
-        onView(ViewMatchers.withId(binding.button.id))
+        onView(ViewMatchers.withId(binding.btnChange.id))
             .perform(ViewActions.click())
-        onView(ViewMatchers.withId(binding.textView.id))
+        onView(ViewMatchers.withId(binding.tvText.id))
             .check(ViewAssertions.matches(ViewMatchers.withText("DevHyeon")))
     }
 
