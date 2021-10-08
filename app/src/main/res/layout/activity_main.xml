@@ -6,9 +6,6 @@
 
     <data>
         <variable
-            name="activity"
-            type="com.devhyeon.uitest.main.MainActivity" />
-        <variable
             name="viewModel"
             type="com.devhyeon.uitest.main.MainViewModel" />
     </data>
