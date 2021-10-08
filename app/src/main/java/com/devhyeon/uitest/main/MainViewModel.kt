@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    private var _text = MutableLiveData<String>()
+    private var _text = MutableLiveData<String>("Default")
     val text : LiveData<String> get() = _text
 
     fun buttonClick() {

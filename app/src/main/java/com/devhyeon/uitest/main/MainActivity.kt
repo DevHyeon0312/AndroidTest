@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var _binding : ActivityMainBinding
     val binding : ActivityMainBinding get() = _binding
 
-    val mainViewModel : MainViewModel by viewModels()
+    private val mainViewModel : MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

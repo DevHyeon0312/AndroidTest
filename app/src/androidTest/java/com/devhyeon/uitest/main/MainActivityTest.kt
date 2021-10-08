@@ -37,12 +37,22 @@ class MainActivityTest {
 
     @Test
     fun startTestCase() {
+        defaultTextView()
         buttonClickIsChangeTextView()
     }
 
     @After
     fun endTestCode() {
 
+    }
+
+    /**
+     * ko. 처음 실행했을 때, textView 의 text 가 Default 인지 검사
+     * en. When executed for the first time, check whether the text in the textView is default.
+     * */
+    private fun defaultTextView() {
+        onView(ViewMatchers.withId(binding.tvText.id))
+            .check(ViewAssertions.matches(ViewMatchers.withText("Default")))
     }
 
     /**
